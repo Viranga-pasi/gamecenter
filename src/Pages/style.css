@@ -1,0 +1,16 @@
+.App {
+  background-color: #f0f0f0;
+  font-family: Candara;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #00314f;
+  max-height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
