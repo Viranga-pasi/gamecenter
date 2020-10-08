@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useCallback, useContext } from "react";
+import firebase from "../firebase.js";
+import { AuthContext } from "../auth.js";
+import { Redirect, withRouter } from "react-router";
 
-const Login = () => {
+const Login = ({ history }) => {
+  const handleLogin = useCallback(
+    async (event) => {
+      event.preventDefault();
+      const { email, password } = event.target.elements;
+      try {
+        await firebase
+          .auth()
+          .signInWithEmailAndPassword(email.value, password.value);
+        history.push("/");
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
+
+  const { currentUser } = useContext(AuthContext);
+  if (currentUser) {
+    return <Redirect to="/" />;
+  }
   return (
     <div>
-      <h1>this is Login</h1>
+      <h1>LOGIN</h1>
+      <form onSubmit={handleLogin}>
+        <label>
+          Email
+          <input name="email" type="email" placeholder="Email" />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" placeholder="Password" />
+        </label>
+        <button type="submit">LOGIN</button>
+      </form>
     </div>
   );
 };

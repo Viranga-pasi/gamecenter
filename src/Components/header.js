@@ -7,7 +7,7 @@ const Header = () => {
       <div className="navbar">
         <h1 className="heading">Game Center</h1>
 
-        <button className="hbtn" onClick={() => firebase.auth().signout()}>
+        <button className="hbtn" onClick={() => firebase.auth().signOut()}>
           Sign Out
         </button>
       </div>

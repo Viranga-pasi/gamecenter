@@ -20,7 +20,7 @@ const Signup = ({ history }) => {
   );
   return (
     <div>
-      <h1>SignUp</h1>
+      <h1>SIGNUP</h1>
       <form onSubmit={handleSignup}>
         <label>
           Email
@@ -30,7 +30,7 @@ const Signup = ({ history }) => {
           Password
           <input name="password" type="password" placeholder="Password" />
         </label>
-        <button type="submit">SignUp</button>
+        <button type="submit">SIGNUP</button>
       </form>
     </div>
   );
