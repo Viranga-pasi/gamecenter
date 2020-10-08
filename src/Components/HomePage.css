@@ -1,0 +1,35 @@
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-family: Candara;
+  font-size: 50px;
+  margin: 10px;
+  color: #0087c5;
+  flex: 20;
+  position: relative;
+}
+
+.hbtn {
+  border: 3px solid #017ab3;
+  background-color: #017ab3;
+  /* width: 10%; */
+  text-align: center;
+  flex: 1;
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.hbtn:hover {
+  color: #017ab3;
+  background-color: #ffffff;
+}
