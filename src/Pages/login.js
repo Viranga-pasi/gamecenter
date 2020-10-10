@@ -43,6 +43,8 @@ const Login = ({ history }) => {
     },
     [history]
   );
+
+
   const { currentUser } = useContext(AuthContext);
   if (currentUser) {
     return <Redirect to="/" />;
@@ -93,17 +95,17 @@ window.onload=function(){
               <p className="social-text">Or Sign in with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 
                 <a href="#" className="social-icon">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#" className="social-icon">
-                  <i class="fab fa-google"></i>
+                  <i className="fab fa-google"></i>
                 </a>
                 <a href="#" className="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
                 
               </div>
@@ -134,17 +136,17 @@ window.onload=function(){
               <p className="social-text">Or Sign up with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 
                 <a href="#" className="social-icon">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#" className="social-icon">
-                  <i class="fab fa-google"></i>
+                  <i className="fab fa-google"></i>
                 </a>
                 <a href="#" className="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
                 
               </div>
